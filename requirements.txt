@@ -1,0 +1,6 @@
+streamlit>=1.40
+openai>=1.60
+pydantic>=2.6
+jsonschema>=4.21
+pandas>=2.0
+python-dotenv>=1.0
