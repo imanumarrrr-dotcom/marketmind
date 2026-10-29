@@ -1,13 +1,17 @@
+
 import os, io, json, zipfile, html, time
-import pandas as pd, streamlit as st
+import pandas as pd
+import streamlit as st
 from openai import OpenAI, AuthenticationError
+
 from config import Settings, MODELS, STAGES
-from marketmind.corpus import DOCS
-from marketmind.state import State
-from marketmind.llm import mask, LLMError
-from marketmind.agents import Engine, analyse, make_plan, execute, decide
-from marketmind.tools import dispatch, Ctx
-from marketmind.report import render_md
+from corpus import DOCS
+from state import State
+from llm import mask, LLMError
+from agents import Engine, analyse, make_plan, execute, decide
+from tools import dispatch, Ctx
+from report import render_md
+
 
 st.set_page_config(page_title="MarketMind AI", page_icon="🧭", layout="wide")
 ss = st.session_state
