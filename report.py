@@ -1,6 +1,6 @@
 import time
-from .schemas import Report
-from .state import now
+from schemas import Report
+from state import now
 SECS = ["market_overview", "key_trends", "opportunities", "risks", "recommendations"]
 TITLES = dict(market_overview="Market overview", key_trends="Key trends", opportunities="Opportunities", risks="Risks", recommendations="Recommendations")
 
