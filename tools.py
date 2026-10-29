@@ -2,8 +2,8 @@ import json, re, time
 from types import SimpleNamespace
 from concurrent.futures import ThreadPoolExecutor, TimeoutError as FTimeout
 import jsonschema
-from .corpus import flag_injection
-from .evidence import assess, add_uncertainty, age
+from corpus import flag_injection
+from evidence import assess, add_uncertainty, age
 
 SRC = ["any", "vendor", "analyst", "press", "review"]
 ATTRS = ["pricing_entry", "pricing_enterprise", "target_segment", "key_features", "integrations",
