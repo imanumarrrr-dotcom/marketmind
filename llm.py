@@ -2,7 +2,7 @@ import time, random
 from openai import (OpenAI, RateLimitError, APIConnectionError, APITimeoutError,
                     AuthenticationError, BadRequestError, InternalServerError)
 from pydantic import ValidationError
-from .config import PRICES
+from config import PRICES
 
 class LLMError(Exception):
     def __init__(self, kind, msg): super().__init__(msg); self.kind = kind
