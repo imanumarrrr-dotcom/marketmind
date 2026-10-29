@@ -1,5 +1,5 @@
 import json, re, time, hashlib, os
-from .schemas import Scope, Plan, Synthesis, ExecSummary, Contradictions
+from schemas import Scope, Plan, Synthesis, ExecSummary, Contradictions
 from .llm import LLM, Usage, LLMError, BudgetExceeded
 from .tools import dispatch, model_tools, Ctx, ATTRS
 from .evidence import nums, overlap, add_uncertainty
