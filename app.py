@@ -1,7 +1,7 @@
 import os, io, json, zipfile, html, time
 import pandas as pd, streamlit as st
 from openai import OpenAI, AuthenticationError
-from marketmind.config import Settings, MODELS, STAGES
+from config import Settings, MODELS, STAGES
 from marketmind.corpus import DOCS
 from marketmind.state import State
 from marketmind.llm import mask, LLMError
